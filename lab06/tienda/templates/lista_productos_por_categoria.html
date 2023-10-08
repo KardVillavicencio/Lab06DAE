@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Productos de la categoría "{{ categoria.nombre }}"</h1>
+
+<div class="row">
+    {% for producto in productos %}
+    <div class="col-lg-4 col-md-6 mb-4">
+        <!-- ... Código para mostrar productos ... -->
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
